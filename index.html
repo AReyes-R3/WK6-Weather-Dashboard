@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0215570391.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Header Row 1-->
+    <header>
+        <nav class="navbar p-3 mb-3 text-white justify-content-center bg-dark">
+            <h1 class="display-6">Weather Dashboard</h1>
+        </nav>
+    </header>
+
+    <!--Main - Container Row 2-->
+    <!-- City Search -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-light">
+                <h2 id="city-search">City Search</h2>
+                <div class="input-group mb-3 search-width">
+                    <input type="text" class="form-control" aria-label="City Search" aria-describedby="search-button" id="search-city">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-group w-75">
+                    <button type="button" class="list-group-item text-left">Phoenix</button>
+                    <button type="button" class="list-group-item text-left">Gilbert</button>
+                    <button type="button" class="list-group-item text-left">Chandler</button>
+                    <button type="button" class="list-group-item text-left">Yuma</button>
+                    <button type="button" class="list-group-item text-left">Long Beach</button>
+                    <button type="button" class="list-group-item text-left">San Diego</button>
+                </div>
+            </div>
+            <!--Jumbotron-->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="Jumbotron">
+                            <h2>City Name and Today's Date</h2>
+                            <ul class="list-unstyled">
+                                <li id="tempF">Temperture:</li>
+                                <li id="humidity">Humidity:</li>
+                                <li id="wind-speed">Wind Speed:</li>
+                                <li id="uv-index">UV Index
+                                    <button type="button" class="btn btn-danger">
+                                        UV <span class="badge badge-light">4</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Five Day Forecast blue tiles-->
+                <div class="row">
+                    <div class="col">
+                        <h3>5-Day Forecast</h3>
+                        <div class="card bg-primary text-white">
+                            <div class="card-body p-4">
+                                <h6 id="day1" class="card-date"></h6>
+                                <img id="day1-icon" class="weather-icon">
+                                <p id="day1-temp" class="weather-temp">Temp:</p>
+                                <p id="day1-humid" class="weather-humidity">Humidity:</p>
+                            </div>
+                        </div>
+                        <div class="card bg-primary text-white">
+                            <div class="card-body p-4">
+                                <h6 id="day2" class="card-date"></h6>
+                                <img id="day2-icon" class="weather-icon">
+                                <p id="day2-temp" class="weather-temp">Temp:</p>
+                                <p id="day2-humid" class="weather-humidity">Humidity:</p>
+                            </div>
+                        </div>
+                        <div class="card bg-primary text-white">
+                            <div class="card-body p-4">
+                                <h6 id="day3" class="card-date"></h6>
+                                <img id="day3-icon" class="weather-icon">
+                                <p id="day3-temp" class="weather-temp">Temp:</p>
+                                <p id="day3-humid" class="weather-humidity">Humidity:</p>
+                            </div>
+                        </div>
+                        <div class="card bg-primary text-white">
+                            <div class="card-body p-4">
+                                <h6 id="day4" class="card-date"></h6>
+                                <img id="day4-icon" class="weather-icon">
+                                <p id="day4-temp" class="weather-temp">Temp:</p>
+                                <p id="day4-humid" class="weather-humidity">Humidity:</p>
+                            </div>
+                        </div>
+                        <div class="card bg-primary text-white">
+                            <div class="card-body p-4">
+                                <h6 id="day5" class="card-date"></h6>
+                                <img id="day5-icon" class="weather-icon">
+                                <p id="day5-temp" class="weather-temp">Temp:</p>
+                                <p id="day5-humid" class="weather-humidity">Humidity:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

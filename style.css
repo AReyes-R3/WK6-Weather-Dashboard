@@ -1,0 +1,10 @@
+.search-width {
+    width: 300px;
+}
+
+.card{
+    width: 8rem;
+    margin-right: 10px;
+    display: inline-block;
+
+}
